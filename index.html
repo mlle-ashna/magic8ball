@@ -5,18 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Magic 8 Ball</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
-    <h1 class="title">Magic 8 Ball</h1>
-    <h4 class="words">Seek & Ye Shall Find</h4>
-    <div id="answers">
-        <!-- insert images here -->
+    <div class="container">
+    <div class="title text-center">
+        <h1>Magic&nbsp;<span>8</span>&nbsp;Ball</h1>
     </div>
-    <form>
-        <label for="">Ask me anything!</label>
-        <input name="question" type="text" placeholder="Enter Question Here">
-        <button>Ask!</button>
+    <h4 class="words text-center">All Powerful All Knowing</h4>
+    </div>
+    <div class="container ball-box" id="answers">
+        <div class="ball">
+        <img id="answer" class="start-img justify-content-center" src="img/start.png" width="25%" alt="Magic 8 Ball" onClick="clear()">
+        </div>
+    </div>
+    <div class="container form-box">
+        <h2 class="secondary-text">What answers do you seek?</h2>
+    <form class="form">
+        <input id="question" name="question" type="text" placeholder="Ask a yes or no question.">
+        <button id="ask" class="button" type="button">Ask Now</button>
     </form>
+    </div>
+  
 
 
     <!--   BEGIN FINAL PROJECT INSTRUCTIONS 
